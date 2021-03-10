@@ -12,6 +12,10 @@
     background-position: center;
     width: 50%;
 
+    @include mobile {
+      display: none;
+    }
+
     &__inside {
       position: relative;
       left: 152px;
@@ -26,6 +30,7 @@
 
   .login {
     width: 50%;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
