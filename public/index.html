@@ -5,18 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/css/styles.css">
   <title>Loging</title>
 </head>
 
 <body>
   <main class="main-container">
-    <section class="main-container_item">
-      <section></section>
+    <section class="photo-gallery">
+      <section class="photo-gallery__inside"><img src="./assets/img/inside-mobile.jpg" alt=""></section>
     </section>
-    <section class="main-container_item">
-      <section>
-        <h1>Instagram</h1>
-        <form action="">
+    <section class="login">
+      <section class="login__item">
+        <section class="login__title"><img src="./assets/img/logo.png" alt="Logo"></section>
+        <form action="./main.html">
           <label for="">
             <span>Teléfono, usuario o correo electrónico</span>
             <input type="text" aria-label="Teléfono, usuario o correo electrónico">
@@ -25,34 +26,32 @@
             <span>Contaseña</span>
             <input type="password" aria-label="Contaseña">
           </label>
-          <button type="submit">Iniciar sesión</button>
+          <button type="submit" class="big-button">Iniciar sesión</button>
         </form>
-        <section>
+        <section class="separator">
+          <div class="separator__line"></div>
           <p>O</p>
+          <div class="separator__line"></div>
         </section>
-        <section>
-          <p>Iniciar sesion con Facebook</p>
-        </section>
-        <section>
-          <p>¿Olvidaste tu contrseña?</p>
-        </section>
+        <p class="login__link"><img src="./assets/img/facebook.svg" alt="" class="small-logo"> Iniciar sesion con
+          Facebook</p>
+        <p class="login__link">¿Has olvidado la contrseña?</p>
       </section>
-      <section>
-        <p>¿No tienes cuenta?</p>
-        <a href="#">Registrate</a>
+      <section class="login__item">
+        <p>¿No tienes cuenta? <a href="#">Registrate</a></p>
       </section>
-      <section>
+      <section class="login__get">
         <p>Descarga la app</p>
-        <section>
-          <a href="#"><img src="./assets/img/itunes.png" alt=""></a>
-          <a href="#"><img src="./assets/img/google.png" alt=""></a>
+        <section class="container-store">
+          <a href="#" class="img-store"><img src="./assets/img/itunes.png" alt="" class="img"></a>
+          <a href="#" class="img-store"><img src="./assets/img/google.png" alt="" class="img"></a>
         </section>
       </section>
     </section>
   </main>
-  <footer>
-    <section>
-      <section>
+  <footer class="footer">
+    <section class="footer__link">
+      <section class="link__item">
         <p>Información</p>
         <p>Blog</p>
         <p>Empleo</p>
@@ -64,7 +63,7 @@
         <p>Hastags</p>
         <p>Ubicaciones</p>
       </section>
-      <section>
+      <section class="link__item">
         <p>Belleza</p>
         <p>Danza y espectáculos</p>
         <p>Fitness</p>
@@ -74,11 +73,14 @@
         <p>Artes visuales</p>
       </section>
     </section>
-    <section>
-      <section>
-        <p>Español</p>
+    <section class="footer__language">
+      <section class="language__item">
+        <select name="languaje">
+          <option value="">Español</option>
+          <option value="">English</option>
+        </select>
       </section>
-      <section>
+      <section class="language__item">
         <p>© 2021 Instagram from Facebook</p>
       </section>
     </section>
