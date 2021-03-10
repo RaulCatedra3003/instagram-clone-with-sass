@@ -394,14 +394,14 @@ body {
   background-position: center;
   width: 50%;
 }
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 935px) {
   .main-container .photo-gallery {
     display: none;
   }
 }
 .main-container .photo-gallery__inside {
   position: relative;
-  left: 152px;
+  left: 151px;
   top: 115px;
 }
 .main-container .photo-gallery__inside img {
