@@ -1,0 +1,37 @@
+.history {
+  @extend .background-square;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    i {
+      font-size: 3rem;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      background: linear-gradient(
+        to bottom,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f56040,
+        #f77737,
+        #fcaf45,
+        #ffdc80
+      );
+      background-clip: border-box;
+      background-origin: border-box;
+      margin-top: 7px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+  }
+}

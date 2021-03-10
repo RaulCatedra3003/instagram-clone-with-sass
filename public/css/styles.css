@@ -1,3 +1,8 @@
+.background-square, .main-container .login__item, .post-list, .history {
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -352,6 +357,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background-color: #fafafa;
+  font-family: "Arial";
 }
 
 .big-button {
@@ -366,6 +372,18 @@ body {
   background-color: #0094f6e1;
 }
 
+.big-button__whithout-background {
+  color: #0095f6;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.big-button__whithout-background:hover {
+  color: #0094f6e1;
+}
+
 .img {
   width: 100%;
   object-fit: cover;
@@ -378,6 +396,136 @@ body {
 .small-logo {
   width: 15px;
   height: 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 965px;
+  margin: 0 auto;
+}
+.nav__title {
+  max-width: 150px;
+  margin-left: 0.5rem;
+}
+.nav__search input {
+  text-align: center;
+}
+@media screen and (max-width: 935px) {
+  .nav__search {
+    display: none;
+  }
+}
+.nav__icons {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+.nav__icons .bx-search {
+  display: none;
+}
+@media screen and (max-width: 935px) {
+  .nav__icons .bx-search {
+    display: inline;
+  }
+}
+
+.history {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.history__user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history__user i {
+  font-size: 3rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: linear-gradient(to bottom, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+  background-clip: border-box;
+  background-origin: border-box;
+  margin-top: 7px;
+}
+.history__user p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.post-list {
+  margin: 30px auto;
+  max-width: 600px;
+}
+.post-list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-list__header .post-list__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post-list__header .post-list__title i {
+  font-size: 2.5rem;
+  margin-left: 10px;
+}
+.post-list__header .post-list__title p {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.post-list__header i {
+  margin-right: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.post-list__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+.post-list__icons-principal {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.post-list__icons-save {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.post-list__like {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+.post-list__comments {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+.post-list__time {
+  margin-left: 10px;
+  font-size: 1.4rem;
+  color: #979797;
+}
+.post-list__add-comments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-list__add-comments i {
+  font-size: 1.7rem;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.post-list__add-comments input {
+  margin-bottom: 5px;
+  width: 85%;
+}
+.post-list__add-comments button {
+  margin-bottom: 5px;
+  margin-right: 10px;
 }
 
 .main-container {
@@ -416,8 +564,6 @@ body {
   justify-content: space-evenly;
 }
 .main-container .login__item {
-  border: 1px solid #dbdbdb;
-  border-radius: 1px;
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
@@ -512,6 +658,23 @@ body {
 }
 .footer__language .language__item p {
   padding: 0.5em;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 2px solid #dbdbdb;
+}
+
+.main {
+  width: 100%;
+}
+.main .container-main {
+  margin: 10px auto;
+  max-width: 965px;
+}
+.main .posts {
+  margin: 10px auto;
+  max-width: 965px;
 }
 
 /*# sourceMappingURL=styles.css.map */
